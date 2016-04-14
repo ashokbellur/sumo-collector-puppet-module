@@ -19,6 +19,7 @@ class sumo::nix_config (
   $sumo_exec              = $sumo::sumo_exec,
   $sumo_short_arch        = $sumo::sumo_short_arch,
   $syncsources            = $sumo::syncsources,
+  $sumo_json_source_path  = $sumo::sumo_json_source_path,
 ) {
   unless ($accessid != undef and $accesskey != undef) or ($email != undef and $password != undef) {
     fail(
